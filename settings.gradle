@@ -1,0 +1,4 @@
+rootProject.name = 'advanced-balance'
+
+include 'advanced-balance-webapp'
+include 'advanced-balance-configuration'

@@ -1,0 +1,6 @@
+apply plugin: 'war'
+apply plugin: 'org.akhikhl.gretty'
+
+dependencies {
+	compile project(':advanced-balance-configuration')
+}

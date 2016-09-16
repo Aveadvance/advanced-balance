@@ -1,0 +1,27 @@
+apply plugin: 'java'
+
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	
+	dependencies {
+		classpath 'org.akhikhl.gretty:gretty:+'
+	}
+}
+
+subprojects {
+	apply plugin: 'java'
+	apply plugin: 'groovy'
+	
+	repositories {
+		mavenCentral()
+	}
+	
+	dependencies {
+		compile 'org.codehaus.groovy:groovy-all:2.4.7'
+		compile 'javax.servlet:javax.servlet-api:3.1.0'
+		compile 'org.springframework:spring-webmvc:4.3.2.RELEASE'
+		testCompile 'junit:junit:4.12'
+	}
+}
